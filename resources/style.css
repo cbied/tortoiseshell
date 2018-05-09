@@ -1,0 +1,147 @@
+html, body {
+  font-size: 18px;
+  font-family: Helvetica;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+/* Banner with Nav and text square */
+
+#banner {
+  display: flex;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+#navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 80%;
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h3 {
+  padding-left: 1rem;
+}
+
+#logo img {
+  height: 1.5rem;
+  padding-left: 2rem;
+}
+
+nav ul {
+  display: flex;
+  padding-right: 2rem;
+}
+
+nav ul li {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav ul li a {
+  display: flex;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+#bannertext {
+  text-align: left;
+  position: absolute;
+  float: right;
+  height: 6rem;
+  width: 33rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+#bannertext h2 {
+  padding-top: 2.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 2rem;
+}
+
+/* Icons */
+
+#icons {
+  display: flex;
+  justify-content: center;
+}
+
+.iconcontinater {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 7rem;
+  height: 3rem;
+  margin: 7rem 4rem;
+}
+
+.iconcontinater span {
+  margin-top: 1.5rem;
+}
+
+/* Philosophy and Apppointments */
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutcontainer {
+  text-align: left;
+  width: 20rem;
+  top: 3rem;
+  margin-left: 5%;
+}
+
+.aboutcontainer span {
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+}
+
+.aboutcontainer p {
+  margin-top: 1rem;
+}
+
+/* Footer */
+
+
+#footercontainer {
+  display: flex;
+  background-color: azure;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footercontainer img {
+  height: 1.5rem;
+  margin-left:4rem;
+  margin-top:4rem;
+  margin-bottom:4rem;
+  margin-right:1rem;
+}
+
+#footercontainer p {
+  align-self: center;
+}
