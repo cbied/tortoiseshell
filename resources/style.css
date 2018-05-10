@@ -8,7 +8,6 @@ html, body {
 /* Banner with Nav and text square */
 
 #banner {
-  display: flex;
   background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-size: cover;
   background-position: center;
@@ -45,13 +44,13 @@ html, body {
 
 nav ul {
   display: flex;
-  padding-right: 2rem;
+  margin-right: 2rem;
 }
 
 nav ul li {
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav ul li a {
@@ -61,9 +60,12 @@ nav ul li a {
   color: white;
 }
 
+#mobile-menu {
+  display: none;
+}
+
 #bannertext {
   text-align: left;
-  position: absolute;
   float: right;
   height: 6rem;
   width: 33rem;
@@ -71,12 +73,13 @@ nav ul li a {
   color: black;
   font-weight: bold;
   margin-top: 10rem;
+  margin-right: 5rem;
 }
 
 #bannertext h2 {
-  padding-top: 2.2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin-top: 2.2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   font-size: 2rem;
 }
 
@@ -91,9 +94,21 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 7rem;
-  height: 3rem;
+  width: 5rem;
+  height: 0.5rem;
   margin: 7rem 4rem;
+}
+
+.iconcontinater img {
+  width: 3.5rem;
+}
+
+#paper img {
+  align-self: flex-end;
+}
+
+#ruler img, #truck img {
+  width: 5rem;
 }
 
 .iconcontinater span {
@@ -110,8 +125,8 @@ nav ul li a {
 .aboutcontainer {
   text-align: left;
   width: 20rem;
-  top: 3rem;
-  margin-left: 5%;
+  margin-top: 3rem;
+  margin-left: 8%;
 }
 
 .aboutcontainer span {
@@ -145,3 +160,141 @@ nav ul li a {
 #footercontainer p {
   align-self: center;
 }
+
+
+/* @media */
+
+@media only screen and (max-width: 1027px) {
+  /* Banner, Nav Bar and banner text  */
+
+  #banner {
+  height: 22rem;
+  background-position: 20%;
+}
+
+  #navcontainer {
+    width: 100%;
+  }
+
+  #bannertext {
+    height: 4rem;
+    width: 20rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  #bannertext h2 {
+    margin-top: 1.25rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  /* About container */
+
+  .aboutcontainer {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  /* Banner, Nav Bar and banner text  */
+
+  #banner {
+    height: 17rem;
+  }
+
+  #navcontainer {
+    width: 100%;
+  }
+
+  #logo h3 {
+    display: none;
+  }
+
+  #desktop-menu {
+    display: none;
+}
+
+  #mobile-menu {
+    display: block;
+  }
+
+  #bannertext {
+    width: 100%;
+    height: 4rem;
+    margin-top: 9rem;
+    margin-right: 0;
+  }
+
+  #bannertext h2 {
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* icons */
+
+  #icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.77rem;
+    margin-bottom: 0;
+  }
+
+  .iconcontinater {
+    margin-top: 1.54rem;
+  }
+
+  #paper img {
+    align-self: center;
+  }
+
+  .iconcontinater span {
+    font-size: 0.77rem;
+  }
+
+  /* about */
+
+  #about {
+    flex-wrap: wrap;
+  }
+
+  .aboutcontainer {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .aboutcontainer span {
+      padding-left: 6rem;
+      padding-right: 6rem;
+  }
+
+  .aboutcontainer p {
+    font-size: 0.77rem;
+    margin: 1rem .25rem;
+  }
+
+  /* footer */
+
+  #footercontainer {
+    display: flex;
+    justify-content: center;;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #footercontainer p {
+    display: none;
+  }
+
+  #footercontainer img {
+    margin: 0;
+    padding: 3rem 0;
+  }
